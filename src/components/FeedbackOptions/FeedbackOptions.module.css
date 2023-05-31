@@ -1,0 +1,20 @@
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  padding: 8px 12px;
+  width: 100px;
+  font-size: 16px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: blue;
+  color: azure;
+  border: none;
+}
