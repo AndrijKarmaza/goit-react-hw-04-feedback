@@ -10,11 +10,7 @@ export class App extends Component {
     bad: 0,
   };
 
-  options = {
-    btnOne: 'Good',
-    btnTwo: 'Neutral',
-    btnThree: 'Bad',
-  };
+  options = ['Good', 'Neutral', 'Bad'];
 
   handleFeedback = evt => {
     const text = evt.currentTarget.textContent.toLowerCase();
@@ -36,6 +32,7 @@ export class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
+
     return (
       <Section title="Please leave feedback">
         <FeedbackOptions
